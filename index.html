@@ -220,12 +220,16 @@ body {
   color: #1a1a1a;
   background: #e8e2d3;
   margin: 12px 0 14px 0;
-  padding: 18px 20px;
+  padding: 10px 12px;
   letter-spacing: 0;
   display: inline-block;
   font-weight: 500;
   border-radius: 4px;
   border: 1px solid #2a2a2a;
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 ::selection { background: #6cb6ff; color: #000000; }
@@ -320,7 +324,7 @@ COMMANDS.about = function() {
   return '<div class="output">' +
     '<div class="heading">About</div>' +
     portrait +
-    '<div class="result">I am Darsheel — engineer turned engineering management grad student at Dartmouth. I have been founding and shipping things since 2021. Three startups in India (fintech, F&amp;B, crowdfunding), product and growth at a healthcare AI company, and now building CommuteCal — a smart calendar layer.\n\nI love sitting between business and engineering — translating customer needs into shipped product. That is literally why I am doing the MEM at Dartmouth.\n\nIf you are at an early-stage AI startup in the Bay Area, especially B2B, we should talk.\n\n— off-screen: I collect non-fiction books, ski in the winter, play pickleball in the summer, and the Rubik\'s cube is my favorite fidget toy.</div>' +
+    '<div class="result">I am Darsheel, a CS major, now an engineering management grad student at Dartmouth. I have been founding and shipping things since 2021. Three startups in India (fintech, F&amp;B, crowdfunding), product and growth at a healthcare AI company, and now building CommuteCal — a smart calendar layer.\n\nI love sitting between business and engineering — translating customer needs into shipped product. That is literally why I am doing the MEM at Dartmouth.\n\nIf you are at an early-stage AI startup in the Bay Area, especially B2B, we should talk.\n\n— off-screen: I love reading (collecting) non-fiction books, skiing in the winter, playing pickleball in the summer, and the Rubik\'s cube is my favorite fidget toy.</div>' +
     '</div>';
 };
 
@@ -330,7 +334,7 @@ COMMANDS.now = function() {
     '<div class="entry">' +
       '<div class="entry-title">CommuteCal</div>' +
       '<div class="entry-meta">Co-Founder · Chrome extension on top of Google Calendar</div>' +
-      '<div class="entry-desc">Real-time commute planning, voice scheduling, and pre-meeting context on who you are about to meet. Voice command "coffee with Jack on Tuesday at 3pm at Coupa Cafe" parses into a pre-filled event.<br><br>→ <a href="https://www.loom.com/share/70ad701f38964fe4968f9190f3fe827c" target="_blank" class="link">watch the product walkthrough</a><br><span class="tag">Best Pitch — Dartmouth Startup Weekend</span><span class="tag">Wix Foundry — MIT 2026</span></div>' +
+      '<div class="entry-desc">Real-time commute planning, voice scheduling, and pre-meeting context on who you are about to meet. Voice command "coffee with Jack on Tuesday at 3pm at Coupa Cafe" parses into a pre-filled event.<br><br>→ <a href="https://www.loom.com/share/70ad701f38964fe4968f9190f3fe827c" target="_blank" class="link">watch the product walkthrough</a><br><span class="tag">Best Pitch — Dartmouth Startup Weekend</span><span class="tag">Wix Foundry — Boston 2026 cohort</span></div>' +
     '</div>' +
     '</div>';
 };
