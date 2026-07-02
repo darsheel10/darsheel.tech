@@ -308,9 +308,11 @@ COMMANDS.help = function() {
       '<span class="cmd-name">now</span><span class="cmd-desc">the project I am building</span>' +
       '<span class="cmd-name">startups</span><span class="cmd-desc">3 companies I have co-founded</span>' +
       '<span class="cmd-name">experience</span><span class="cmd-desc">work and consulting experience</span>' +
+      '<span class="cmd-name">involvement</span><span class="cmd-desc">academic roles, fellowships, leadership</span>' +
       '<span class="cmd-name">education</span><span class="cmd-desc">academic background</span>' +
       '<span class="cmd-name">research</span><span class="cmd-desc">papers, patents, projects</span>' +
       '<span class="cmd-name">skills</span><span class="cmd-desc">tech and business skills</span>' +
+      '<span class="cmd-name">blog</span><span class="cmd-desc">my writing on Medium</span>' +
       '<span class="cmd-name">contact</span><span class="cmd-desc">how to reach me</span>' +
       '<span class="cmd-name">clear</span><span class="cmd-desc">clear the screen</span>' +
     '</div>' +
@@ -324,7 +326,7 @@ COMMANDS.about = function() {
   return '<div class="output">' +
     '<div class="heading">About</div>' +
     portrait +
-    '<div class="result">I am Darsheel, a CS major, now an engineering management grad student at Dartmouth. I have been founding and shipping things since 2021. Three startups in India (fintech, F&amp;B, crowdfunding), product and growth at a healthcare AI company, and now building CommuteCal — a smart calendar layer.\n\nI love sitting between business and engineering — translating customer needs into shipped product. That is literally why I am doing the MEM at Dartmouth.\n\nIf you are at an early-stage AI startup in the Bay Area, especially B2B, we should talk.\n\n— off-screen: I love reading (collecting) non-fiction books, skiing in the winter, playing pickleball in the summer, and the Rubik\'s cube is my favorite fidget toy.</div>' +
+    '<div class="result">I am Darsheel, a CS major, now an engineering management grad student at Dartmouth. I have been founding and shipping things since 2021. Three startups in India (fintech, F&amp;B, crowdfunding), product and growth at a healthcare AI company, and now building CommuteCal — a smart calendar layer.\n\nI love sitting between business and engineering — translating customer needs into shipped product. That is literally why I am doing the MEM at Dartmouth.\n\nIf you are at an early-stage AI startup in the Bay Area, we should talk.\n\n— off-screen: I love reading (collecting) non-fiction books, skiing in the winter, playing pickleball in the summer, and the Rubik\'s cube is my favorite fidget toy.</div>' +
     '</div>';
 };
 
@@ -364,6 +366,16 @@ COMMANDS.startups = function() {
 COMMANDS.experience = function() {
   return '<div class="output">' +
     '<div class="heading">Experience</div>' +
+    '<div class="entry">' +
+      '<div class="entry-title">Inspirit AI</div>' +
+      '<div class="entry-meta">AI Program Manager Intern · Jun 2026 — Present · San Francisco, CA</div>' +
+      '<div class="entry-desc">Scaling AI education globally. Leading educational programs end-to-end across K-12 schools in the US, delivering to 80+ students. Working on-site at 4 partner schools, running programs directly with students and coordinating logistics. Also contributing to research, academics, and AI-driven projects.</div>' +
+    '</div>' +
+    '<div class="entry">' +
+      '<div class="entry-title">Faros MedWorks</div>' +
+      '<div class="entry-meta">Graduate Technology Consultant · Apr 2026 — Jun 2026 · Remote</div>' +
+      '<div class="entry-desc">Built MarketScope AI — a tool that turns a MedTech pitch deck into a full competitive analysis across 10 sourced stages. Pulls live data from openFDA and ClinicalTrials.gov, runs parallel queries, merges and deduplicates by relevance. Final output is a Word report Faros hands directly to clients. Reduced analysis time from 5 days to 30 minutes. Delivered clean codebase handoff to their internal team.</div>' +
+    '</div>' +
     '<div class="entry">' +
       '<div class="entry-title">Capital One</div>' +
       '<div class="entry-meta">Graduate Student Consultant · Sep 2025 — Nov 2025</div>' +
@@ -417,6 +429,11 @@ COMMANDS.research = function() {
       '<div class="entry-desc">Novel granular method for analyzing scale and profitability on a minute-by-minute basis. Used Euphoria Beverages as the case study.<br>→ <a href="https://www.researchgate.net/publication/383328004_Minute-Economics_A_Novel_Granular_Approach_To_Analyzing_Scale_And_Profitability_For_Nascent_And_Bootstrapped_FB_Startups" target="_blank" class="link">read paper</a></div>' +
     '</div>' +
     '<div class="entry">' +
+      '<div class="entry-title">Enhancing Passenger Experience in Indian Railways: A Computer Vision-Based Approach to Virtual Transparency of Window Pillars</div>' +
+      '<div class="entry-meta">AIP Conference Proceedings · 2026</div>' +
+      '<div class="entry-desc">Computer vision system enabling virtual transparency of window pillars (A-pillars) in train coaches, improving passenger experience and situational awareness.<br>→ <a href="https://pubs.aip.org/aip/acp/article-abstract/3441/1/060002/3391562/Enhancing-passenger-experience-in-indian-railways?redirectedFrom=fulltext" target="_blank" class="link">read paper</a></div>' +
+    '</div>' +
+    '<div class="entry">' +
       '<div class="entry-title">USC and NYU Joint Research</div>' +
       '<div class="entry-meta">Oct 2024 — Apr 2025</div>' +
       '<div class="entry-desc">Trained AI models to help daily-wage artisans save time and optimize revenue.</div>' +
@@ -453,16 +470,74 @@ COMMANDS.contact = function() {
       '<span class="k">email</span><span class="v">darsheelsanghavi@gmail.com&nbsp;&nbsp;/&nbsp;&nbsp;darsheel.s.sanghavi.th@dartmouth.edu</span>' +
       '<span class="k">linkedin</span><span class="v"><a href="https://linkedin.com/in/darsheelsanghavi" target="_blank" class="link">linkedin.com/in/darsheelsanghavi</a></span>' +
       '<span class="k">scholar</span><span class="v"><a href="https://scholar.google.com/citations?hl=en&user=DXpemhwAAAAJ" target="_blank" class="link">Google Scholar</a></span>' +
-      '<span class="k">resume</span><span class="v"><a href="https://drive.google.com/file/d/1ifQ55zdtFzlV-59Npo5FaX7crLIytEfB/view?usp=sharing" target="_blank" class="link">view formal resume (PDF)</a></span>' +
-      '<span class="k">based</span><span class="v">Hanover, NH (moving to SF this summer)</span>' +
-      '<span class="k">looking</span><span class="v">summer internship → full-time after Nov 2026</span>' +
+      '<span class="k">blog</span><span class="v"><a href="https://medium.com/@darsheelsanghavi" target="_blank" class="link">medium.com/@darsheelsanghavi</a></span>' +
+      '<span class="k">resume</span><span class="v"><a href="https://drive.google.com/file/d/1O9VUE88czSi3n0SWg1uYlHLiCUPdvlsd/view?usp=sharing" target="_blank" class="link">view formal resume (PDF)</a></span>' +
+      '<span class="k">based</span><span class="v">San Francisco, CA (summer) → Hanover, NH (fall) until Nov 2026</span>' +
     '</div>' +
+    '</div>';
+};
+
+COMMANDS.involvement = function() {
+  return '<div class="output">' +
+    '<div class="heading">Involvement — Dartmouth</div>' +
+    '<div class="entry">' +
+      '<div class="entry-title">Magnuson Center for Entrepreneurship</div>' +
+      '<div class="entry-meta">Startup Mentor · Mar 2026 — Present</div>' +
+      '<div class="entry-desc">Mentoring early-stage student founders at Dartmouth\'s entrepreneurship center.</div>' +
+    '</div>' +
+    '<div class="entry">' +
+      '<div class="entry-title">Tuck School of Business</div>' +
+      '<div class="entry-meta">Tuck Bridge Fellow · Jun 2026 — Jul 2026</div>' +
+      '<div class="entry-desc">Mentored Tuck Bridge Program students in entrepreneurship and AI product management.</div>' +
+    '</div>' +
+    '<div class="entry">' +
+      '<div class="entry-title">Thayer School of Engineering</div>' +
+      '<div class="entry-meta">Graduate Teaching Assistant · Mar 2026 — Jun 2026</div>' +
+      '<div class="entry-desc">TA for ENGS 177 — Decision-Making under Uncertainty (Prof. Wesley Marrero).</div>' +
+    '</div>' +
+    '<div class="entry">' +
+      '<div class="entry-title">Thayer School of Engineering</div>' +
+      '<div class="entry-meta">Community Fellow · Oct 2025 — Jun 2026</div>' +
+      '<div class="entry-desc">Conducting graduate student and postdoc interviews for the Humans of Thayer storytelling initiative. Led community projects and organized events within the Thayer student community.</div>' +
+    '</div>' +
+    '<div class="entry">' +
+      '<div class="entry-title">TuckLAB — Entrepreneurship Program</div>' +
+      '<div class="entry-meta">Fellow · Jan 2026 — Mar 2026</div>' +
+      '<div class="entry-desc">Delivered structured feedback to undergraduate teams in entrepreneurship, product development, and financial modeling. Selected to judge the Marketing Challenge and evaluate undergraduate venture presentations.</div>' +
+    '</div>' +
+    '<div class="entry">' +
+      '<div class="entry-title">MEM Council</div>' +
+      '<div class="entry-meta">VP of Events · Sep 2025 — Present</div>' +
+    '</div>' +
+    '<div class="heading" style="margin-top:18px;">Involvement — Undergrad</div>' +
+    '<div class="entry">' +
+      '<div class="entry-title">DJSCE Lok Sabha</div>' +
+      '<div class="entry-meta">Founder &amp; Chairperson · Apr 2024 — May 2025 · Elected Prime Minister</div>' +
+      '<div class="entry-desc">Founded and led a 70+ member student governance committee across two political parties. Elected Prime Minister with 80% vote share — party won 12 of 13 constituencies. Assisted 3000+ students and built a direct outreach feature connecting every student to their elected representative.</div>' +
+    '</div>' +
+    '<div class="entry">' +
+      '<div class="entry-title">TEDxDJSCE</div>' +
+      '<div class="entry-meta">Chief Curator &amp; Founding Member · Jul 2023 — Sep 2024</div>' +
+      '<div class="entry-desc">Led a 7-person curators team and was a core member of the 80+ person founding committee. Responsible for event themes, speaker curation, and overall event success.</div>' +
+    '</div>' +
+    '<div class="entry">' +
+      '<div class="entry-title">RFG LABS</div>' +
+      '<div class="entry-meta">Founder &amp; Lead Researcher → Advisor · Jun 2024 — Dec 2025</div>' +
+      '<div class="entry-desc">Empowering young researchers to drive social impact through meaningful research and innovation.</div>' +
+    '</div>' +
+    '</div>';
+};
+
+COMMANDS.blog = function() {
+  window.open('https://medium.com/@darsheelsanghavi', '_blank');
+  return '<div class="output">' +
+    '<div class="result">Opening Medium → <a href="https://medium.com/@darsheelsanghavi" target="_blank" class="link">medium.com/@darsheelsanghavi</a></div>' +
     '</div>';
 };
 
 COMMANDS.whoami = function() {
   return '<div class="output">' +
-    '<div class="result">CS engineer. 3x founder. Builder.\nCurrently at the Dartmouth MEM program — learning to be an efficient bridge between engineering and business teams.\nLooking for an early-stage AI startup to build at this summer.</div>' +
+    '<div class="result">CS engineer. 3x founder. Builder.\nCurrently at Dartmouth MEM and Inspirit AI in SF — scaling AI education across K-12 schools in the US.\nAlways building something.</div>' +
     '</div>';
 };
 
@@ -481,7 +556,12 @@ var ALIASES = {
   patents: 'research',
   stack: 'skills',
   reach: 'contact',
-  email: 'contact'
+  email: 'contact',
+  activities: 'involvement',
+  extracurriculars: 'involvement',
+  leadership: 'involvement',
+  writing: 'blog',
+  medium: 'blog'
 };
 
 var outputArea = document.getElementById('output-area');
